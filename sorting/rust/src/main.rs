@@ -31,8 +31,8 @@ fn sort_insertion(input: &[i32]) -> Vec<i32> {
 mod tests {
     use crate::sort_insertion;
 
-    static UNSORTED_ARR: [i32; 10] = [5, 2, 2, 1, 4, 0, 3, 10, 24, 7];
-    static SORTED_ARR: [i32; 10] = [0, 1, 2, 2, 3, 4, 5, 7, 10, 24];
+    static UNSORTED_ARR: [i32; 11] = [5, 2, 2, 1, 4, 0, 3, -5, 10, 24, 7];
+    static SORTED_ARR: [i32; 11] = [-5, 0, 1, 2, 2, 3, 4, 5, 7, 10, 24];
 
     #[test]
     fn test_insertion_sort() {
